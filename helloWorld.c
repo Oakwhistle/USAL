@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main (void)
+int main ()
 {
-    printf("Hello World!/n/d");
+    printf("Hello World!\n\b");
+    return 0;
 }
