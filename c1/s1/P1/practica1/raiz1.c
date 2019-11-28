@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-include <math.h>
+#include <math.h>
 
 /* Prorgrama: raiz1.c */
 /* Descripcion: Resolver la ecuacion de segundo grado a*x*x + b*x +c=0  */
  
-main(void)
+int main(void)
 {
 	float a, b, c, d, raiz1, raiz2;
 
@@ -14,11 +14,11 @@ main(void)
 	printf("Teclea el valor de a:  ");
 	scanf("%f",&a);
 	printf("\n");
-	printf("Teclea el valor de b:  );
+	printf("Teclea el valor de b:  ");
 	scanf("%f",&b);
 	printf("\n");
 	printf("Teclea el valor de c:  ");
-	scanf("%f",&c)
+	scanf("%f",&c);
 	printf("\n");
 
 	/* Realizar los calculos */
@@ -36,6 +36,6 @@ main(void)
 	a = 1.0		b = -3.0	c = 2.0
 	Interpreta los resultados.
 	Volver a ejecutar el programa para:
-	a = 1.0		b = 2.0	    c = 3.0
+	a = 1.0		b = 2.0	    c = 3.0 */
 
 }
