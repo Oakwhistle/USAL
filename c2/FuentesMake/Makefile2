@@ -1,0 +1,19 @@
+OBJS = testord.o metodos.o memoria.o auxi.o
+CC = gcc
+CFLAGS = -g -c
+SOURCES = testord.c metodos.c memoria.c auxi.c 
+HEADERS = auxi.h metodos.h memoria.h                                    
+testord : $(OBJS)
+	$(CC) $^ -o $@
+	@ echo “Construcción terminada”
+testord.o : testord.c $(HEADERS)
+auxi.o : auxi.h
+memoria.o : memoria.h
+metodos.o : metodos.h
+proyecto.tar : $(SOURCES) $(HEADERS) Makefile Makefile2
+	tar -cvf proyecto.tar $^ 
+
+clean:
+	@for f in $(OBJS) testord; do if [ -f "$$f" ]; then rm "$$f"; fi; done;
+	
+
